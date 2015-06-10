@@ -29,6 +29,8 @@ module.exports = generators.Base.extend({
     this.copy('webpack.config.js');
     this.copy('webpack.config.server.js');
     this.copy('src/client.js');
+    this.copy('src/models.js');
+    this.copy('src/modelsDb.js');
     this.copy('src/client.styl');
     this.copy('src/server.js');
   },
