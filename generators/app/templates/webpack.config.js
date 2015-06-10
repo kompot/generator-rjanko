@@ -17,7 +17,8 @@ module.exports.svgoConfig = JSON.stringify({
 module.exports.resolve = {
   alias: {
     // axios requires `es6-promise` polyfill so we replace it with bluebird
-    'es6-promise': 'bluebird'
+    'es6-promise': 'bluebird',
+    'subproject': __dirname
   },
   extensions: ['', '.js'],
   modulesDirectories: ['node_modules']
