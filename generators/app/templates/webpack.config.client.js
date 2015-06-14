@@ -6,6 +6,8 @@ const StatsPlugin = require('rjanko/lib/statsPlugin');
 const prod = process.env.NODE_ENV === 'production';
 var configCommon = require('./webpack.config');
 
+const rslv = configCommon.resolve;
+
 var config = {
   entry: {
     vendor: [
@@ -18,7 +20,10 @@ var config = {
     publicPath: '/build/',
     filename: '[name].[chunkhash].js'
   },
-  resolve: configCommon.resolve,
+  resolve: {
+    ...rslv,
+    alias: configCommon.aliasClient
+  },
   bail: prod,
   node: {
     // used to get real filename for `debug`

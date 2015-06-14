@@ -19,6 +19,8 @@ const nodeModules = {};
     });
 });
 
+const rslv = configCommon.resolve;
+
 var config = {
   entry: {
     server: ['./src/server.js']
@@ -28,7 +30,10 @@ var config = {
     filename: '[name].js'
   },
   externals: nodeModules,
-  resolve: configCommon.resolve,
+  resolve: {
+    ...rslv,
+    alias: configCommon.aliasServer
+  },
   bail: prod,
   target: 'node',
   node: {

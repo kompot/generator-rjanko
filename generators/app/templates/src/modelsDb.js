@@ -5,6 +5,6 @@ const TrackSchema = new mongoose.Schema({
   album: String
 });
 
-const TrackModel = mongoose.model('Track', TrackSchema);
+const Track = mongoose.model('Track', TrackSchema);
 
-export const Track = {Track: TrackModel, TrackSchema};
+export default {Track};
