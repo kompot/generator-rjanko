@@ -26,6 +26,7 @@ module.exports = generators.Base.extend({
     this.copy('nginx.dev.conf');
     this.template('package.json', vars);
     this.copy('Procfile');
+    this.copy('server.js');
     this.copy('webpack.config.client.js');
     this.copy('webpack.config.js');
     this.copy('webpack.config.server.js');
