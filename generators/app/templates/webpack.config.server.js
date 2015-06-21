@@ -2,7 +2,7 @@ var os = require('os');
 var fs = require('fs');
 var path = require('path');
 var webpack = require('webpack');
-//var StatsPlugin = require('rjanko/lib/statsPlugin');
+//var StatsPlugin = require('rjanko/src/statsPlugin');
 
 var prod = process.env.NODE_ENV === 'production';
 var configCommon = require('./webpack.config');
