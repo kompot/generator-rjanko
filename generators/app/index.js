@@ -35,7 +35,7 @@ module.exports = generators.Base.extend({
     this.template('src/configServer.js', vars);
     this.copy('src/models.js');
     this.copy('src/modelsDb.js');
-    this.copy('src/client.styl');
+    this.copy('src/client.less');
     this.copy('src/server.js');
   },
 
