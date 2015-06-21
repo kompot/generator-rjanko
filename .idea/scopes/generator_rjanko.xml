@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="generator-rjanko" pattern="!file[generator-rjanko]:.idea//*" />
+</component>
