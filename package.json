@@ -1,6 +1,6 @@
 {
   "name": "generator-rjanko",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Yeoman generator for Rjanko",
   "main": "./generators/app/index.js",
   "keywords": ["yeoman-generator"],
