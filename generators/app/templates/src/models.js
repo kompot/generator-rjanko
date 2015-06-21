@@ -1,6 +1,6 @@
 import yup from 'yup';
 
-const debug = require('rjanko/lib/core/logging/debug')(__filename);
+const debug = require('rjanko/src/core/logging/debug')(__filename);
 
 // TODO move this to Rjanko core
 yup.addMethod(yup.mixed, 'label', function(l) {

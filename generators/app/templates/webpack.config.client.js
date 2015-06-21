@@ -31,13 +31,6 @@ var config = {
   },
   module: {
     loaders: [{
-        test: /\.styl$/,
-        loader:
-          //  prod
-          //? ExtractTextPlugin.extract('style', 'css!autoprefixer?' + autoPrefixerCfg + '!stylus')
-          //:
-            'style!css!autoprefixer?' + configCommon.autoPrefixerConfig + '!stylus'
-      }, {
         test: /\.less$/,
         loader:
           //  prod
@@ -55,11 +48,11 @@ var config = {
         test: /\.(ttf|woff|woff2|eot|gif|png|jpg|mp3|mp4|webm|ogg)(\?.+)?$/,
         loader: 'file?name=[sha512:hash:base36:7].[ext]'
       }, {
-        test: /src\/.+\.js$/,
-        exclude: /node_modules/,
+        test: /\.js$/,
+        include: [/node_modules\/rjanko\/src/, /src/],
         loaders: prod
-            ? ['component-css?ext=styl', 'babel']
-            : ['react-hot', 'component-css?ext=styl', 'babel']
+            ? ['component-css?ext=less', 'babel']
+            : ['react-hot', 'component-css?ext=less', 'babel']
       }, {
         test: /.*\.svg.*$/,
         loaders: ['file', 'svgo?' + configCommon.svgoConfig]
