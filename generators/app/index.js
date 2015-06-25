@@ -23,7 +23,7 @@ module.exports = generators.Base.extend({
     var vars = { title: this.appname };
     this.copy('.babelrc');
     this.copy('gitignore', '.gitignore');
-    this.copy('nginx.dev.conf');
+    this.copy('nginx.conf');
     this.template('package.json', vars);
     this.copy('Procfile');
     this.copy('server.js');
