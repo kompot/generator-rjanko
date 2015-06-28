@@ -18,7 +18,7 @@ var config = {
   output: {
     path: path.join(process.cwd(), 'build'),
     publicPath: '/build/',
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[hash].js'
   },
   resolve: {
     ...rslv,
