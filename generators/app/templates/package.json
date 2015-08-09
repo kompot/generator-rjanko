@@ -25,7 +25,6 @@
     "express": "^4.13.1",
     "express-session": "^1.11.3",
     "file-loader": "^0.8.4",
-    "foreman": "^1.4.1",
     "json-loader": "^0.5.2",
     "jspath": "^0.3.1",
     "less": "^2.5.1",
