@@ -53,6 +53,6 @@
     "svgo-loader": "^1.1.0",
     "webpack": "^1.10.1",
     "webpack-dev-server": "^1.10.1",
-    "yup": "^0.8.3"
+    "yup": "^0.7.5"
   }
 }
