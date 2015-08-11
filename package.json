@@ -15,6 +15,6 @@
   },
   "homepage": "https://github.com/kompot/generator-rjanko#readme",
   "dependencies": {
-    "yeoman-generator": "^0.20.1"
+    "yeoman-generator": "^0.20.2"
   }
 }

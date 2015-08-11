@@ -7,7 +7,7 @@ function run() {
 
 if [[ $TMUX ]]; then
   tmux new-window
-  tmux splitw -v -p 20
+  tmux splitw -v -p 30
   tmux bind q kill-session
   run 0 "npm run dev"
   run 1 "nginx -p $(pwd) -c $(pwd)/nginx.conf"
